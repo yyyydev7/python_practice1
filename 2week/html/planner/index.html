@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+<div>첫번째 DIV 영역</div> <div>두번째 DIV 영역</div>
+<hr>
+<span>#1번 SPAN 구역</span> <span>#2번 SPAN 구역</span>
+
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+</ul>
+
+<ol type="A" start="1">
+    <li>첫 번째 항목</li>
+</ol>
+<dl>
+    <dt>HTML</dt>
+    <dd>웹 페이지를 만드는 데 사용되는 마크업 언어입니다.</dd>
+</dl>
+<hr>
+
+<table>
+    <thread>
+        <tr><th>이름</th><th>나이</th></tr>
+    </thread>
+    <tbody>
+        <tr><td>홍길동</td><td>30</td></tr>
+    </tbody>
+</table>
+<hr>
+
+<table border="1">
+    <tr>
+        <th rowspan="2">이름</th>
+        <th>나이</th><th>직업</th>
+    </tr>
+    <tr>
+        <td colspan="2">정보 없음</td>
+    </tr>
+</table>
+<hr>
+
+<table>
+    <caption>2일 학습 진도표</caption>
+    <thread>
+        <tr><th scope="col">일차</th><th scope="col">주제</th></tr>
+    </thread>
+    <tbody>
+        <tr><th scope="row">1일차</th><td>HTML CSS</td></tr>
+        <tr><th scope="row">2일차</th><td>Javascript</td></tr>
+    </tbody>
+    <tfoot><tr><td colspan="2">총 2일 과정</td></tr></tfoot>
+</table>
+<hr>
+
+<form>
+    <label for="username">사용자 이름:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="fruit">과일 선택:</label>
+    <select id="fruit" name="fruit">
+        <option value="">-- 과일 선택 --</option>
+        <option value="사과" selected>사과</option>
+    </select>
+
+    <button type="submit">제출</button>
+</form>
+
+<input class="form-input" id="goal-input" type="text"
+         placeholder="오늘 공부할 내용을 입력하세요" required>
+
+<input type="email" required>
+<input type="number" min="1" max="10">
+<input type="text" minlength="2" maxlength="20">
+<input type="text" pattern="[0-9]{3}-[0-9]{4}">
+
+<form class="form" id="goal-form" novalidate> ... </form>
+<hr>
+
+<figure>
+    <img src="planner.png" alt="목표 4개 중 2개가 완료된 플래너 화면"
+        width="600" height="400">
+    <figcaption>완성된 SKALA 스터디 플래너</figcaption>
+</figure>
+<hr>
+
+<label class="sr-only" for="goal-input">학습 목표</label>
+<input class="form-input" id="goal-input" type="text"
+         placeholder="오늘 공부할 내용을 입력하세요" required>
+<section class="panel" aria-labelledby="form-title"></section>
+<div class="tabs" id="filter-tabs" role="group" aria-label="목록 필터"></div>
+
+</body>
+</html>
